@@ -1,4 +1,4 @@
-Pipeline
+pipeline
 {
   agent any
   stages
@@ -14,7 +14,8 @@ Pipeline
     {
       steps
       {
-        sh "java Demo.java"
+        sh "javac Demo.java"
+        sh "java Demo"
       }
     }
   }
